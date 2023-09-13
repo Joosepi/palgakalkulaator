@@ -10,14 +10,14 @@ connection = mysql.connector.connect(
 
 cursor = connection.cursor()
 
-# Funktsioon uue palga lisamiseks andmebaasi
+# Funktsioon uue palga lisamiseks
 def lisa_palk(nimi, amet, palk):
     sql = "INSERT INTO palk (nimi, amet, palk) VALUES (%s, %s, %s)"
     val = (nimi, amet, palk)
     cursor.execute(sql, val)
     connection.commit()
 
-# Rakenduse põhiosa
+
 if __name__ == "__main__":
     print("Tere tulemast palgakalkulaatorisse!")
     while True:
