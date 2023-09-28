@@ -42,5 +42,5 @@ def main():
     print('|{:<40} {:<14}|'.format('Neto Pay:', '${:.2f}'.format(total_neto_pay)))
     print('+' + '-'*90 + '+')
 
-# Program start
+
 main()
